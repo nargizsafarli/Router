@@ -1,0 +1,10 @@
+
+.product-items{
+background-color: gainsboro;
+text-align: center;
+padding: 50px;
+gap: 20px;
+}
+.details{
+    padding: 15px 20px;
+}
