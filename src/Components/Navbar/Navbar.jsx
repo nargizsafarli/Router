@@ -14,7 +14,7 @@ function Navbar() {
     <div className='nav'>
         <p>Wishlish</p>
         <div className='nav-link'>
-        {["Home","About","Contact"].map((name,index)=>(
+        {["Home","About","contact"].map((name,index)=>(
             <NavLink key={index} to={ name ==="Home"? "/" : `/${name}`} style={linkStyle} >{name}</NavLink>
         ))}
         </div> 
