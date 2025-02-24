@@ -8,6 +8,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { useNavigate } from "react-router-dom";
+import productImg from "./assets/m-h-slider-img-6.png";
 
 function ProductSlider() {
   const [data, setData] = useState([]);
@@ -39,8 +40,12 @@ function ProductSlider() {
   if (error) return <p style={{ textAlign: "center", color: "red" }}>Error: {error}</p>;
 
   return (
-    <div className="product-container" style={{ width:"80%",margin:"auto",padding:"20px"}}>
-      <h2 style={{ textAlign: "center" }}>Find Your Beauty Match</h2>
+    <div className="product-container">
+      <div className="product-text">
+      <img src={productImg}/>
+      <h2 >Find Your Beauty Match</h2>
+      <span>At vero eos et accusamus et iusto</span>
+      </div>
       <Swiper
         modules={[Navigation, Pagination]}
         spaceBetween={20}
@@ -59,7 +64,7 @@ function ProductSlider() {
               <img
                 src={item.thumbnail}
                 alt={item.title}
-                style={{ width: "100%", borderRadius: "10px" }}
+                style={{ width: "250px", height:"200px", borderRadius: "10px" }}
               />
               <h3>{item.title}</h3>
               <p>${item.price}</p>

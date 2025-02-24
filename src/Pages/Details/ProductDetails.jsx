@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
+import "./Detail.css"
 
 function ProductDetails() {
   const { id } = useParams(); 
@@ -29,15 +30,17 @@ function ProductDetails() {
   if (error) return <p>{error}</p>;
 
   return (
-    <div>
-      <h2>{product.title}</h2>
-      <img src={product.thumbnail} alt={product.title} />
+    <div className="detail-container">
+     <img src={product.thumbnail} alt={product.title} />
+    <div className="container-items">
+      <h2>Title:{product.title}</h2>
       <p>{product.description}</p>
       <p>Price: ${product.price}</p>
       <p>Brand: {product.brand}</p>
       <Link to="/product">
-        <button>Go Back</button>
+        <button>← Go Back</button>
       </Link>
+     </div>
     </div>
   );
 }
