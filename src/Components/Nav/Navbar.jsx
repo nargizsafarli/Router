@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router-dom'
 import { GrFavorite } from "react-icons/gr"
 import { GrIntegration } from "react-icons/gr";
 import "./Navbar.css"
-import logo from "./assets/logo-dark.png"
+
 
 function Navbar() {
     const linkStyle=({isActive})=>({
