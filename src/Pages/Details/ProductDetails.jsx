@@ -34,9 +34,9 @@ function ProductDetails() {
      <img src={product.thumbnail} alt={product.title} />
     <div className="container-items">
       <h2>Title:{product.title}</h2>
-      <p>{product.description}</p>
-      <p>Price: ${product.price}</p>
-      <p>Brand: {product.brand}</p>
+      <p className="des">{product.description}</p>
+      <p><span className="bold">Price:</span>${product.price}</p>
+      <p><span className="bold">Brand:</span>{product.brand}</p>
       <Link to="/product">
         <button>← Go Back</button>
       </Link>

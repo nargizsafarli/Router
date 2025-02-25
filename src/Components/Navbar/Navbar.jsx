@@ -9,7 +9,7 @@ function Navbar() {
     const linkStyle=({isActive})=>({
         textDecoration:"none",
         borderBottom: isActive? "2px solid black" : "none",
-        // font-weight:isActive? "blue" : "black"
+        color:isActive? "blue" : "black"
     })
   return (
     <div className='nav'>

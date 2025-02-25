@@ -1,13 +1,13 @@
 import React from 'react'
 import "./Home.css"
 import { Outlet, useNavigate } from 'react-router-dom'
-
+import velvet from "./assets/m-h-slider-img-6 (1).png"
 function Home() {
   const navigate=useNavigate()
   return (
     <div className='Home-container'>
     <div className='home-items'>
-      <p>velvet beauty</p>
+     <img src={velvet}/>
       <h1>Oiginal style</h1>
       <span>
         At vero eos es accosamus et iouso odio disgnission ducimus qiu blanditiss

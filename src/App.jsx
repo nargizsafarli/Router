@@ -2,13 +2,11 @@ import React from 'react'
 import { BrowserRouter, Route, Router, Routes } from 'react-router-dom'
 import About from './Pages/About/About'
 import Home from './Pages/Home/Home'
-import NotFound from './Pages/NotFound'
 import Navbar from './Components/Navbar/Navbar'
 import ProductPage from './Pages/Product/ProductPage'
 import ProductDetails from './Pages/Details/ProductDetails'
 import Contact from './Pages/Contact/Contact'
-
-
+import NotFound from './Pages/NotFound/NotFound'
 
 function App() {
   return (
@@ -16,7 +14,6 @@ function App() {
   
       <BrowserRouter>
      <Navbar/>
-     
         <Routes>
          <Route path='/' element={<Home/>}/>
           <Route path='product' element={<ProductPage/>}/>
