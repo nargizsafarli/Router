@@ -8,12 +8,12 @@ function Home() {
     <div className='Home-container'>
     <div className='home-items'>
      <img src={velvet}/>
-      <h1>Oiginal style</h1>
+      <h1>Original style</h1>
       <span>
         At vero eos es accosamus et iouso odio disgnission ducimus qiu blanditiss
         praesenttuis voluptaous delentie at corrupte quess dolours te quas
       </span>
-     <button onClick={()=>navigate("product")}>view product</button>
+     <button onClick={()=>navigate("product")}>View product</button>
     </div>
     <Outlet/>
     </div>
